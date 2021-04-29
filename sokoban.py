@@ -1,4 +1,20 @@
 #pygame ?
+"""
++5 box on goal
++10 all boxes on goals
+
+box with walls on two or more sides -1
+
+input states [ wall left, wall right, wall up, wall down,
+
+  move left, move right, move up, move down,
+
+  goal left, goal right,
+  goal up, goal down
+]
+
+output states [move left, move right, move up, move down]
+"""
 
 FLOOR = 0
 WALL = 1
