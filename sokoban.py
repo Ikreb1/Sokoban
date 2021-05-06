@@ -168,8 +168,19 @@ def playLevel():
 	global currentLevel
 	printLevel()
 	levelOneSolve = ["right", 'left', 'left', 'down', 'left', 'up', 'up']
+	levelTwoSolve = ["right", "up", "right", "right", "right", "down", 
+	"left", "left", "left", "right", "right", "right", "down", "down", 
+	"down", "left", "down", "right", "up", "up", "up", "up", "left", "left",
+	"down", "right", "down", "right", "down", "down", "left", "left", "down",
+	"left", "left", "up", "right", "left", "up"]
+	print(currentLevel)
 	if currentLevel == 0:
 		for command in levelOneSolve:
+			print("level 1:", command)
+			execute(command)
+	elif currentLevel == 1:
+		for command in levelTwoSolve:
+			print("level 2:", command)
 			execute(command)
 
 
